@@ -18,7 +18,7 @@ var db *sql.DB
 // Model, which embeds all the types we want to be available to our application.
 func New(dbPool *sql.DB) Models {
 	db = dbPool
-
+	
 	return Models{
 		User: User{},
 	}
